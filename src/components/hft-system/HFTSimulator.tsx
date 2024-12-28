@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 const HFTSimulator = () => {
-  const [orderBook, setOrderBook] = useState({
+  const [orderBook] = useState({
     bids: [
       { price: 99.50, quantity: 100 },
       { price: 99.25, quantity: 150 },

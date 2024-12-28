@@ -1,5 +1,5 @@
-import HFTSystem from '@/components/hft-system/HFTSystem';
+import HFTSimulator from '@/components/hft-system/HFTSimulator';
 
 export default function Page() {
-  return <HFTSystem />;
+  return <HFTSimulator />;
 }

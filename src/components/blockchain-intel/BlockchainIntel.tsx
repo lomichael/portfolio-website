@@ -24,6 +24,12 @@ const BlockchainIntel = () => {
     ]
   });
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Add search functionality in future iterations
+    console.log('Searching for address:', searchAddress);
+  };
+
   return (
     <div className="container mx-auto p-6">
       <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-6">
@@ -34,7 +40,7 @@ const BlockchainIntel = () => {
       <h1 className="text-3xl font-bold mb-6">Blockchain Intelligence Platform</h1>
 
       <div className="mb-8">
-        <div className="flex gap-4 mb-4">
+        <form onSubmit={handleSearch} className="flex gap-4 mb-4">
           <input
             type="text"
             placeholder="Enter wallet address"
@@ -42,11 +48,14 @@ const BlockchainIntel = () => {
             value={searchAddress}
             onChange={(e) => setSearchAddress(e.target.value)}
           />
-          <button className="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2">
+          <button 
+            type="submit"
+            className="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2"
+          >
             <Search size={20} />
             <span>Search</span>
           </button>
-        </div>
+        </form>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">

@@ -1,47 +1,35 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Shield, AlertTriangle, Server, Bug } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 const ThreatDashboard = () => {
-  const [threatData, setThreatData] = useState({
-    recentThreats: [],
-    aptActivity: [],
-    riskScores: []
+  const [threatData] = useState({
+    recentThreats: [
+      { id: 1, name: 'APT28', target: 'Government', confidence: 'High', timestamp: '2024-03-28' },
+      { id: 2, name: 'APT29', target: 'Healthcare', confidence: 'Medium', timestamp: '2024-03-27' },
+      { id: 3, name: 'APT41', target: 'Technology', confidence: 'High', timestamp: '2024-03-26' },
+    ],
+    aptActivity: [
+      { date: '2024-03-22', incidents: 12 },
+      { date: '2024-03-23', incidents: 8 },
+      { date: '2024-03-24', incidents: 15 },
+      { date: '2024-03-25', incidents: 10 },
+      { date: '2024-03-26', incidents: 20 },
+      { date: '2024-03-27', incidents: 18 },
+      { date: '2024-03-28', incidents: 25 },
+    ],
+    riskScores: [
+      { sector: 'Government', score: 85 },
+      { sector: 'Healthcare', score: 75 },
+      { sector: 'Technology', score: 70 },
+      { sector: 'Finance', score: 80 },
+    ]
   });
-
-  // Simulated APT data for MVP
-  useEffect(() => {
-    // In production, this would fetch from your API
-    const mockData = {
-      recentThreats: [
-        { id: 1, name: 'APT28', target: 'Government', confidence: 'High', timestamp: '2024-03-28' },
-        { id: 2, name: 'APT29', target: 'Healthcare', confidence: 'Medium', timestamp: '2024-03-27' },
-        { id: 3, name: 'APT41', target: 'Technology', confidence: 'High', timestamp: '2024-03-26' },
-      ],
-      aptActivity: [
-        { date: '2024-03-22', incidents: 12 },
-        { date: '2024-03-23', incidents: 8 },
-        { date: '2024-03-24', incidents: 15 },
-        { date: '2024-03-25', incidents: 10 },
-        { date: '2024-03-26', incidents: 20 },
-        { date: '2024-03-27', incidents: 18 },
-        { date: '2024-03-28', incidents: 25 },
-      ],
-      riskScores: [
-        { sector: 'Government', score: 85 },
-        { sector: 'Healthcare', score: 75 },
-        { sector: 'Technology', score: 70 },
-        { sector: 'Finance', score: 80 },
-      ]
-    };
-    
-    setThreatData(mockData);
-  }, []);
 
   return (
     <div className="container mx-auto p-6">
@@ -49,6 +37,7 @@ const ThreatDashboard = () => {
         <ArrowLeft size={20} />
         <span>Back to Portfolio</span>
       </Link>
+
       <div className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Threat Intelligence Dashboard</h1>
         <p className="text-gray-600">Real-time APT activity monitoring and analysis</p>
