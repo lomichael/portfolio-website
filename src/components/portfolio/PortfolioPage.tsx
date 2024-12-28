@@ -64,7 +64,7 @@ const PortfolioPage = () => {
 
   const personalInfo = {
     name: "Michael Lo",
-    title: "Ethical Hacker, Software Engineer, Intelligence Analyst",
+    title: "Ethical Hacker, Intelligence Analyst, Software Engineer",
     github: "https://github.com/malarquis",
     linkedin: "https://linkedin.com/in/malarquis",
     email: "malarquis@gmail.com"
