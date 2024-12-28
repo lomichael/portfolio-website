@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Michael Lo - Portfolio',
-  description: 'Portfolio of projects built by Michael Lo',
+  title: 'Michael Lo - Projects',
+  description: 'Projects built by Michael Lo',
   // Optional: Add more metadata
   keywords: ['ethical hacking', 'cyber threat intelligence analysis', 'blockchain security', 'portfolio'],
   authors: [{ name: 'Michael Lo' }],
   // Optional: Add OpenGraph metadata for better social sharing
   openGraph: {
-    title: 'Michael Lo - Portfolio',
-    description: 'Portfolio of projects built by Michael Lo',
+    title: 'Michael Lo - Projects',
+    description: 'Projects built by Michael Lo',
     type: 'website',
   }, 
 };
