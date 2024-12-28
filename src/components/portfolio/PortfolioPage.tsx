@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink, Shield, Activity, Database, Search, LineChart } from 'lucide-react';
+import { Github, ExternalLink, Shield, Database, Search, LineChart } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const PortfolioPage = () => {
