@@ -63,11 +63,11 @@ const PortfolioPage = () => {
   ];
 
   const personalInfo = {
-    name: "Your Name",
-    title: "Security Engineer & Full Stack Developer",
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    email: "your.email@example.com"
+    name: "Michael Lo",
+    title: "Ethical Hacker, Software Engineer, Intelligence Analyst",
+    github: "https://github.com/malarquis",
+    linkedin: "https://linkedin.com/in/malarquis",
+    email: "malarquis@gmail.com"
   };
 
   return (
