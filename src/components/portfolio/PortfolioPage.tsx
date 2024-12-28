@@ -9,7 +9,7 @@ const PortfolioPage = () => {
       description: "Real-time monitoring system for APTs, state-sponsored threats, and cyber campaigns. Features advanced visualization of threat actor activities and malware trends.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
       github: "/threat-dashboard",
-      demo: "/projects/threat-dashboard",
+      demo: "/threat-dashboard",
       icon: Shield,
       features: [
         "APT activity tracking and analysis",
@@ -23,7 +23,7 @@ const PortfolioPage = () => {
       description: "Low-latency trading platform with real-time market analysis and ML-driven predictions for algorithmic trading strategies.",
       tech: ["Python", "C++", "Redis", "PostgreSQL"],
       github: "/hft-system",
-      demo: "/projects/hft-system",
+      demo: "/hft-system",
       icon: LineChart,
       features: [
         "Sub-microsecond order execution",
@@ -37,7 +37,7 @@ const PortfolioPage = () => {
       description: "Cryptocurrency transaction analysis tool for detecting fraudulent activities and tracking illicit financial flows across multiple blockchains.",
       tech: ["Go", "Rust", "Python", "TypeScript", "React", "MongoDB"],
       github: "/blockchain-intel",
-      demo: "/projects/blockchain-intel",
+      demo: "/blockchain-intel",
       icon: Database,
       features: [
         "Multi-chain transaction tracking",
@@ -51,7 +51,7 @@ const PortfolioPage = () => {
       description: "Automated reconnaissance and vulnerability detection framework for web applications, focusing on critical security flaws.",
       tech: ["Python", "Go", "Docker", "MongoDB"],
       github: "/bug-bounty",
-      demo: "/projects/bug-bounty",
+      demo: "/bug-bounty",
       icon: Search,
       features: [
         "Automated recon pipeline",
