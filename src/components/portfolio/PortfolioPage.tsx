@@ -35,14 +35,14 @@ const PortfolioPage = () => {
     {
       title: "Blockchain Intelligence Platform",
       description: "Cryptocurrency transaction analysis tool for detecting fraudulent activities and tracking illicit financial flows across multiple blockchains.",
-      tech: ["Python", "Neo4j", "React", "Web3.js"],
+      tech: ["Go", "Rust", "Python", "TypeScript", "React", "MongoDB"],
       github: "/blockchain-intel",
       demo: "/projects/blockchain-intel",
       icon: Database,
       features: [
         "Multi-chain transaction tracking",
+        "ML-powered risk assessment",
         "Suspicious wallet clustering",
-        "Risk scoring system",
         "Fraud pattern detection"
       ]
     },
